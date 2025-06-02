@@ -1,0 +1,34 @@
+
+
+@font-face {
+    font-family: PlayfairR;
+    src: url("./assets/fonts/PlayfairDisplay-Regular.ttf");
+  }
+    @font-face {
+      font-family: PlayfairM;
+      src: url("./assets/fonts/PlayfairDisplay-Medium.ttf");
+    }
+    @font-face {
+      font-family: PlayfairSb;
+      src: url("./assets/fonts/PlayfairDisplay-SemiBold.ttf");
+    }
+    @font-face {
+      font-family: PlayfairB;
+      src: url("./assets/fonts/PlayfairDisplay-Bold.ttf");
+    }
+  @import "tailwindcss";
+  @theme {
+    --font-PlayfairM: PlayfairM, "sans-serif";
+    --font-PlayfairSb: PlayfairSb, "sans-serif";
+    --font-PlayfairB: PlayfairB, "sans-serif";
+    --font-PlayfairR: PlayfairR, "sans-serif";
+  
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+  }
